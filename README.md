@@ -39,7 +39,7 @@ This is a powerful and customizable Discord Server Cloning tool built using `dis
 
 ### 1. Clone the repository
 ```bash
-git clone https://github.com/yourusername/discord-server-cloner.git
+https://github.com/YaBoiSwayZ/Discord-Guild-Cloner.git
 cd discord-server-cloner
 ```
 
@@ -62,7 +62,7 @@ TOKEN = 'YOUR_DISCORD_TOKEN'
 
 1. Run the script:
    ```bash
-   python server_cloner.py
+   python cloner.py
    ```
 
 2. After logging in, you will be presented with a menu where you can select different actions:
