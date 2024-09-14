@@ -1,6 +1,6 @@
 # Discord Server Cloner
 
-This is a powerful and customizable Discord Server Cloning tool built using `discord.py` version 1.6.0. It allows you to copy entire servers, save their data to JSON, load servers from JSON, wipe servers, and more. This tool is useful for server management, replication, and backups.
+This is a powerful and customizable Discord Server Cloning tool built using `discord.py` version 1.6.0. It allows you to copy entire servers, save their data to JSON, load servers from JSON, Nuke servers, and more comming soon-ish. This tool is useful for server management, replication, and backups.
 
 ## Table of Contents
 1. [Features](#features)
@@ -115,9 +115,9 @@ All actions performed by the script are logged into a file named `server_clone.l
 
 Sample log entry:
 ```
-2024-09-07 12:35:22 - INFO - Logged in as YourDiscordUserName#1234
+2024-09-07 12:35:22 - INFO - Logged in as iSuckDick#0
 2024-09-07 12:37:45 - INFO - Cloning server 'SourceServer' to 'TargetServer'
-2024-09-07 12:40:10 - ERROR - Failed to clone emoji 'ExampleEmoji': Missing Permissions
+2024-09-07 12:40:10 - ERROR - Failed to clone emoji 'PogChamp': Missing Permissions
 ```
 
 ---
@@ -125,13 +125,13 @@ Sample log entry:
 ## Known Issues and Troubleshooting
 
 1. **Missing Permissions**:
-   - Ensure the account used has the required permissions in both the source and target servers (Manage Roles, Manage Channels, Manage Emojis, etc.).
+   - Ensure the account used has the required permissions in the target server (Manage Roles, Manage Channels, Manage Emojis, etc.).
 
 2. **Server Wipe Icon Retrieval Fails**:
    - If the server wipe process fails to fetch the custom icon (`ICON_URL`), the server will default to no icon. Check the `server_clone.log` for detailed error messages.
 
 3. **Role/Permission Mapping Errors**:
-   - During server load, if certain role IDs from the JSON file do not exist in the target server, permission mappings for those roles will be skipped. A log message will indicate the missing role IDs.
+   - During server load, if certain role IDs from the JSON file do not exist in the target server for some strange reason, permission mappings for those roles will be skipped. A log message will indicate the missing role IDs.
 
 ---
 
